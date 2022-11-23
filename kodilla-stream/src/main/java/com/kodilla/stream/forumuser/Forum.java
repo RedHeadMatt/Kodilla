@@ -10,7 +10,7 @@ public class Forum {
 
     public Forum(){
 
-        listOfForumUsers.add(new ForumUser(1, "Mateusz", 'm', LocalDate.of(1990, 8, 14), 0));
+        listOfForumUsers.add(new ForumUser(1, "Mateusz", 'm', LocalDate.of(1980, 8, 14), 2));
         listOfForumUsers.add(new ForumUser(2, "Olga", 'f', LocalDate.of(1990, 4, 10), 20));
         listOfForumUsers.add(new ForumUser(3, "Nina", 'f', LocalDate.of(2000, 1, 20), 30));
         listOfForumUsers.add(new ForumUser(4, "Krzysztof", 'm', LocalDate.of(1966, 3, 13), 4));
