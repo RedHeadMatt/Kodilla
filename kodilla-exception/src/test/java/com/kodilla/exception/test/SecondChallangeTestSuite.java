@@ -9,7 +9,7 @@ public class SecondChallangeTestSuite {
     @Test
     void testOne(){
 
-        ExceptionHandling exceptionHandling = new ExceptionHandling();
+        SecondChallenge secondChallenge = new SecondChallenge();
 
         //3 boundary conditions:
         //  x>=2
@@ -17,9 +17,10 @@ public class SecondChallangeTestSuite {
         //  y=1.5
 
         assertAll(
-                () -> assertThrows(MyOwnException.class, () -> exceptionHandling.sth(2,10)),
-                () -> assertThrows(MyOwnException.class, () -> exceptionHandling.sth(0, 10)),
-                () -> assertThrows(MyOwnException.class, () -> exceptionHandling.sth(0, 1.5))
+                () -> assertThrows(Exception.class, () -> secondChallenge.probablyIWillThrowException(10, 20)),
+                () -> assertThrows(Exception.class, () -> secondChallenge.probablyIWillThrowException(2,10)),
+                () -> assertThrows(Exception.class, () -> secondChallenge.probablyIWillThrowException(0, 10)),
+                () -> assertThrows(Exception.class, () -> secondChallenge.probablyIWillThrowException(0, 1.5))
         );
 
     }
